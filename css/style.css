@@ -37,7 +37,7 @@ body{
     color: #ac37b2;;
 }
 .white{
-    color:#ffffff;
+    color:#f9f5f7;
 }
 .black{
     color: #000000;
@@ -81,9 +81,19 @@ body{
     height: 100%;
 }
 
+h2:after{
+    content: "";
+    height: 2px;
+    width: 100px;
+    background-color: #ac37b2;
+    display: block;
+    margin: 0 auto;
+    margin-top: 8px;
+}
+
 
 #home-cover{
-    background: linear-gradient(rgba(172,55,178, 0.7), rgba(172,55,178, 0.7)), url('../images/hero.png');
+    background: linear-gradient(rgba(172,55,178, 0.7), rgba(172,55,178, 0.7)), url('../images/helo.png');
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -254,52 +264,20 @@ div.card:hover::before{
     opacity: 1;
 }
 
-/*choose*/
-.choose{
-    padding: 4% 0% 4% 0%;
-    background: linear-gradient(rgba(0, 105, 93, 0.5), rgba(0, 105, 93, 0.5)), url('../images/two.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
-.choose  h2{
-    color: #ac37b2;
-}
-
-.choose  h2:after{
-    content: "";
-    height: 2px;
-    width: 100px;
-    background-color: #fff;
-    display: block;
-    margin: 0 auto;
-    margin-top: 8px;
-}
-
-.choose .eneza{
-    background-color: #ffffff;
-}
-
 /*Contact section*/
 .contact{
     padding-top: 2%;
 }
 
-.contact h3{
-    font-size: 36px;
-    line-height: 40px;
-    color: #41508A;
-    letter-spacing: -0.02em;
-    font-weight: 400;
+.contact h2{
+    padding-bottom: 50px;
 }
 
 .contact h3:after{
     content: "";
     height: 2px;
     width: 100px;
-    background-color:#ac37b2;
+    background-color:#fff;
     display: block;
     margin: 0 auto;
     margin-top: 8px;
@@ -313,7 +291,7 @@ div.card:hover::before{
     background-color: #001f3f;
 }
 #two{
-    background-color: #39CCCC;
+    background-color: #ac37b2;
 }
 
 .footer{
@@ -326,55 +304,41 @@ div.card:hover::before{
 .footer footer p{
     vertical-align: middle;
 }
-/*.btn-back-to-top {
-    display: none!important;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 9999;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    background: #242C33;
-    color: #fff;
-    font-size: 25px;
-    line-height: 37px;
-    border-radius: 50%;
-    cursor: pointer;
-}*/
-
 
 #button {
     display: inline-block;
-    background-color: #ac37b2;
-    width: 50px;
-    height: 50px;
+    background-color: transparent;
+    border:1px solid #000000;
+    width: 30px;
+    height: 30px;
     text-align: center;
     border-radius: 4px;
     position: fixed;
     bottom: 20px;
-    right: 5px;
+    right: 2px;
     transition: background-color .3s, 
-      opacity .5s, visibility .5s;
+    opacity .5s, visibility .5s;
     opacity: 0;
     visibility: hidden;
     z-index: 1000;
   }
+
   #button::after {
     content: "\f106";
     font-family: FontAwesome;
     font-weight: normal;
     font-style: normal;
     font-size: 2em;
-    line-height: 50px;
-    color: #fff;
+    line-height: 30px;
+    color: #000000;
   }
   #button:hover {
     cursor: pointer;
-    background-color: #001f3f;
+    color: #fff;
+    border: none;
   }
   #button:active {
-    background-color: #001f3f;
+    background-color: transparent;
   }
   #button.show {
     opacity: 1;
@@ -391,6 +355,8 @@ div.card:hover::before{
     color: #6c767a;
     line-height: 1.9;
   }
+
+
   @media (min-width: 500px) {
     .content {
       width: 43%;
