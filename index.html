@@ -18,26 +18,48 @@
 
     <title>Eneza Telecom</title>
   </head>
-  <body data-spy="scroll" data-target=".fixed-top" data-off="65">
-        <nav id="nav" class="navbar navbar-expand-md navbar-dark fixed-top change scani-nav">
-                <a class="navbar-brand" href="#">ENEZA TELECOM</a>
+  <body id="home" data-spy="scroll" data-target=".navbar" data-off="65">
+  
+    <header>
+        <nav id="nav" class="navbar navbar-expand-md navbar-dark fixed-top change float-right white-nav-top">
+
+          <div class="container-fluid"> 
+          
+
+                <div class="nav-header">
+                    <a class="navbar-brand" href="#">ENEZA TELECOM</a>
+                </div>
+
+
+
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                  <ul class="navbar-nav mr-auto">
+
+
+                <div class="collapse navbar-collapse container" id="navbarCollapse">
+                  <ul class="nav navbar-nav ml-auto text-uppercase">
                     <li class="nav-item active">
-                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                      <a class="nav-link smooth-scroll" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Link</a>
+                      <a class="nav-link smooth-scroll" href="#about">About Us</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link disabled" href="#">Disabled</a>
+                      <a class="nav-link smooth-scroll" href="#service">Services</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link smooth-scroll" href="#contact">Contact us</a>
                     </li>
                   </ul>
                 </div>
+
+
+
+            </div>
+            
               </nav>
+    </header>
 
     <!--Introduction-->
     <section class="home" id="particles-j">
@@ -56,14 +78,10 @@
 
 
     <!--about section-->
-    <section class="about">
+    <section id="about" class="about">
         <div class="container col-md-12">
         
         <div class="row">
-            <!--<div class="col-md-6">
-                    <img src="images/hero.png" class="img-fluid" alt="Responsive image">
-            </div>-->
-               
             <div class="col-md-12 text-center">
                 <div class="container">
                     <h2 class="text-center primary-color">About us</h2>
@@ -78,7 +96,7 @@
 
     <!--service section begin one-->
     <!--Heading-->
-    <div class="service">
+    <div id="service" class="service">
         <h2 class="text-center text-uppercase primary-color">Our Services</h2>
     </div>
     <!--end of heading-->
@@ -88,7 +106,7 @@
     <div class="thm-container">
         <div class="row">
             <div class="col-md-7 pull-left">
-                <img class="img-fluid wow fadeIn" data-wow-delay="0.3s" src="./images/reni.png">
+                <img class="img-fluid wow fadeIn" data-wow-delay="0.3s" src="./images/lani.png">
             </div><!-- /.col-md-7 -->
             <div class="col-md-5 pull-right">
                 <div class="feature-style-content">
@@ -114,7 +132,7 @@
                 </div><!-- /.feature-style-content -->
             </div><!-- /.col-md-5 -->
             <div class="col-md-7 pull-right">
-                <img class="img-fluid wow fadeIn" data-wow-delay="0.3s" src="./images/rend.png">
+                <img class="img-fluid wow fadeIn" data-wow-delay="0.3s" src="./images/wale.png">
             </div><!-- /.col-md-7 -->
         </div><!-- /.row -->
     </div><!-- /.thm-container -->
@@ -126,7 +144,7 @@
         <div class="thm-container">
             <div class="row">
             <div class="col-md-7 pull-left">
-                <img class="img-fluid wow fadeIn" data-wow-delay="0.3s" src="./images/cashi.png">
+                <img class="img-fluid wow fadeIn" data-wow-delay="0.3s" src="./images/were.png">
             </div><!-- /.col-md-7 -->
             <div class="col-md-5 pull-right">
                 <div class="feature-style-content">
@@ -152,7 +170,7 @@
                 </div><!-- /.feature-style-content -->
             </div><!-- /.col-md-5 -->
             <div class="col-md-7 pull-right">
-                <img class="img-fluid wow fadeIn" data-wow-delay="0.3s" src="./images/emale.png">
+                <img class="img-fluid wow fadeIn" data-wow-delay="0.3s" src="./images/output.png">
             </div><!-- /.col-md-7 -->
         </div><!-- /.row -->
     </div><!-- /.thm-container -->
@@ -160,7 +178,7 @@
     <!--end of service section four-->
 
     <!--contact-->
-    <section class="contact">
+    <section id="contact" class="contact">
         <div class="container-fluid">
             .<div class="row">
                 <div class="col-md-12">
@@ -210,6 +228,7 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/one.js"></script>
     <script src="js/wow.min.js"></script>
+    <script src="js/jquery.easing.js"></script>
     <script>
         new WOW().init();
     </script>

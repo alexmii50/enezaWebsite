@@ -22,9 +22,31 @@ body{
     padding: 0;
 }
 
-#nav{
-    background-color: #f8f9fa;
+/* #navbar{
+    transition: all .5s ease-in-out;
 }
+.navbar-toggle{
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 0;
+}
+.navbar-toggle .icon-bar{
+    background-color: #ac37b2!important;
+}
+.navbar-dark .navbar-toggler {
+    background-color: #ac37b2!important;
+}
+
+.scani-nav{
+    background-color: transparent!important;
+    padding: 10px 5px;
+}
+
+.scani-new{
+    background-color: #ffffff;
+    padding: 10px 5px;
+}
+
 #nav.change{
     background-color: #f8f9fa;
     transition: all ease .5s;
@@ -32,7 +54,10 @@ body{
 
 .navbar-brand{
     color: #000000!important;
-}
+} */
+
+
+
 .primary-color{
     color: #ac37b2;;
 }
@@ -91,6 +116,61 @@ h2:after{
     margin-top: 8px;
 }
 
+/*navigation bar*/
+.navbar-dark .navbar-nav .nav-link {
+    color: #000000;
+}
+.navbar-dark .navbar-nav .active>.nav-link{
+    color: #000000;
+}
+
+.navbar-dark .navbar-nav .nav-link.active{
+    color: #ac37b2;
+    background: none;
+
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #000000;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: #ac37b2;
+    background: none;
+}
+
+.navbar{
+    padding: 35px 0 20px 0;
+    transition: all ease-out 0.5s;
+}
+.site-nav-wrapper{
+    padding: 0 85px;
+}
+
+.navbar-brand{
+    padding: 13px 15px;
+}
+
+ul.navbar-nav > li > a{
+    font-family: "Raleway", sans-serif;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.white-nav-top{
+    background-color: #fff;
+    padding: 0px 0px;
+    box-shadow: 0 8px 6px -9 #999;
+    -webkit-box-shadow: 0 8px 6px -9 #000;
+    z-index: 2;
+    transition: all ease-in-out .5s;
+}
+
+.white-nav-top .navbar-brand{
+    color: #ac37b2;
+}
 
 #home-cover{
     background: linear-gradient(rgba(172,55,178, 0.7), rgba(172,55,178, 0.7)), url('../images/helo.png');
