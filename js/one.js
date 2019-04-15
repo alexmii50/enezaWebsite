@@ -2,6 +2,7 @@
 $(document).ready(function(){
 
     var btn = $('#button');
+    var btn2 = $('#about');
 
     $(window).scroll(function() {
     if ($(window).scrollTop() > 100) {
@@ -16,6 +17,11 @@ $(document).ready(function(){
         $('html, body').animate({scrollTop:0}, '300');
     });
 
+    btn2.on('click', function(e) {
+      e.preventDefault();
+      $('html, body').animate({scrollTop:0}, '300');
+    });
+
     $('body').scrollspy({target: ".navbar", offset: 50});
 
 
@@ -28,7 +34,7 @@ $("#nav a").on('click', function(event) {
       var hash = this.hash;
       $('html, body').animate({
         scrollTop: $(hash).offset().top
-      }, 800, function(){
+      }, 400, function(){
   
         window.location.hash = hash;
       });
@@ -61,6 +67,10 @@ $("#nav a").on('click', function(event) {
         }, 1250, "easeInBack");
 
       });
+    } );
+
+    $(window).on('load', function(){
+      $('#arrow-down i').addClass("animated fadeInDown infinite");
     } )
  
 
