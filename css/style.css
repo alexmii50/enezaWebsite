@@ -2,7 +2,7 @@ html, body{
     height: 100%;
 }
 html {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Old Standard TT', serif;
     font-size: 16px;
     line-height: 1.5;
     color: #545454;
@@ -21,42 +21,6 @@ body{
     margin: 0;
     padding: 0;
 }
-
-/* #navbar{
-    transition: all .5s ease-in-out;
-}
-.navbar-toggle{
-    background-color: #fff;
-    border: 1px solid #fff;
-    border-radius: 0;
-}
-.navbar-toggle .icon-bar{
-    background-color: #ac37b2!important;
-}
-.navbar-dark .navbar-toggler {
-    background-color: #ac37b2!important;
-}
-
-.scani-nav{
-    background-color: transparent!important;
-    padding: 10px 5px;
-}
-
-.scani-new{
-    background-color: #ffffff;
-    padding: 10px 5px;
-}
-
-#nav.change{
-    background-color: #f8f9fa;
-    transition: all ease .5s;
-}
-
-.navbar-brand{
-    color: #000000!important;
-} */
-
-
 
 .primary-color{
     color: #ac37b2;;
@@ -117,11 +81,21 @@ h2:after{
 }
 
 /*navigation bar*/
+#nav.navbar-dark .navbar-nav > li > a{
+    text-transform: uppercase;
+    color: #FFF;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+#nav.navbar-dark .navbar-nav > li > a:hover, #nav.navbar-dark .navbar-nav > li > a.active, #nav.navbar-dark .navbar-nav > li > a:focus{
+    color: #ac37b2!important;
+}
 .navbar-dark .navbar-nav .nav-link {
-    color: #000000;
+    color: #fff;
 }
 .navbar-dark .navbar-nav .active>.nav-link{
-    color: #000000;
+    color: #fff;
 }
 
 .navbar-dark .navbar-nav .nav-link.active{
@@ -130,14 +104,16 @@ h2:after{
 
 }
 
-.navbar-dark .navbar-nav .nav-link {
-    color: #000000;
-}
-
 .navbar-dark .navbar-nav .nav-link:hover{
     color: #ac37b2;
     background: none;
 }
+
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+
 
 .navbar{
     padding: 35px 0 20px 0;
@@ -169,8 +145,28 @@ ul.navbar-nav > li > a{
     transition: all ease-in-out .5s;
 }
 
-.white-nav-top .navbar-brand{
+.white-nav-top .navbar-brand, .white-nav-top .navbar-brand:hover {
     color: #ac37b2;
+}
+
+.white-nav-top .navbar-brand, .white-nav-top .navbar-brand:focus {
+    color: #ac37b2;
+}
+
+.white-nav-top .navbar-brand, .white-nav-top .navbar-brand.active {
+    color: #ac37b2;
+}
+
+.white-nav-top .navbar-nav .active>.nav-link {
+    color: #ac37b2;
+}
+
+.white-nav-top ul.navbar-nav > li > a{
+    color: #000!important;
+}
+
+.white-nav-top ul.navbar-nav > li > a{
+    color: #000!important;
 }
 
 .navbar-dark .navbar-toggler {
@@ -184,16 +180,68 @@ ul.navbar-nav > li > a{
     border-color: #ac37b2;
 }
 
+.navbar-toggler {
+    background-color: #ac37b2;
+    border: 1px solid #000;
+}
+
 #home-cover{
     /* background: linear-gradient(rgba(172,55,178, 0.7),
      rgba(172,55,178, 0.7)), url('../images/helo.png'); */
-     background: linear-gradient(rgba(0,0,0, 0.7),
-     rgba(172,55,178, 0.7)), url('../images/helo.png');
+     background: -moz-linear-gradient(top, 
+     rgba(0,0,0,0.8) 0%,
+      rgba(0,0,0,0.73) 17%, 
+      rgba(0,0,0,0.66) 35%, 
+      rgba(0,0,0,0.55) 62%, 
+      rgba(0,0,0,0.4) 100%),
+      url('../images/helo.png');
+      background: -webkit-gradient(top, rgba(0,0,0,0.8) 0%,
+      rgba(0,0,0,0.73) 17%, 
+      rgba(0,0,0,0.66) 35%, 
+      rgba(0,0,0,0.55) 62%, 
+      rgba(0,0,0,0.4) 100%),
+      url('../images/helo.png');
+     
+     background: -webkit-linear-gradient(top, 
+     rgba(0,0,0,0.8) 0%,
+     rgba(0,0,0,0.73) 17%,
+     rgba(0,0,0,0.66) 35%,
+     rgba(0,0,0,0.55) 62%,
+     rgba(0,0,0,0.4) 100%),
+     url('../images/helo.png');
+     background: -o-linear-gradient(top, 
+     rgba(0,0,0,0.8) 0%,
+     rgba(0,0,0,0.73) 17%,
+     rgba(0,0,0,0.66) 35%,
+     rgba(0,0,0,0.55) 62%,
+     rgba(0,0,0,0.4) 100%),
+     url('../images/helo.png');
+     background: -ms-linear-gradient(top, 
+     rgba(0,0,0,0.8) 0%,
+     rgba(0,0,0,0.73) 17%,
+     rgba(0,0,0,0.66) 35%,
+     rgba(0,0,0,0.55) 62%,
+     rgba(0,0,0,0.4) 100%),
+     url('../images/helo.png');
+     background: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%,
+     rgba(0,0,0,0.73) 17%,
+     rgba(0,0,0,0.66) 35%,
+     rgba(0,0,0,0.55) 62%,rgba(0,0,0,0.4) 100%), 
+     url('../images/helo.png');
+
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     height: 100%;
+}
+
+.hero-titles{
+    font-size: 1em;
+    font-weight: 900;
+}
+.enesa{
+    color: #ac37b2;
 }
 
 #home-content-box{
@@ -263,6 +311,14 @@ ul.navbar-nav > li > a{
     margin: 0 auto;
     margin-top: 8px;
     opacity: 0.5;
+}
+.about p{
+    color: #7A7F93;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: -0.02em;
+    font-weight: 500;
+    margin-top: 15px;
 }
 
 .feature-style-two.padding-one {
