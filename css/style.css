@@ -2,7 +2,7 @@ html, body{
     height: 100%;
 }
 html {
-    font-family: 'Old Standard TT', serif;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 16px;
     line-height: 1.5;
     color: #545454;
@@ -185,6 +185,14 @@ ul.navbar-nav > li > a{
     border: 1px solid #000;
 }
 
+.nav-logo{
+    height: 42px;
+}
+
+.nav-logo{
+    transition: height 0.5s ease;
+}
+
 #home-cover{
     /* background: linear-gradient(rgba(172,55,178, 0.7),
      rgba(172,55,178, 0.7)), url('../images/helo.png'); */
@@ -240,9 +248,6 @@ ul.navbar-nav > li > a{
     font-size: 1em;
     font-weight: 900;
 }
-.enesa{
-    color: #ac37b2;
-}
 
 #home-content-box{
     width: 100%;
@@ -259,10 +264,13 @@ ul.navbar-nav > li > a{
     font-size: 65px;
     font-weight: 100;
     margin: 20px 0px 20px 0px;
+    text-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
 #home-heading p{
     color: #fff;
+    font-size: 50px;
+    margin-top: 40px;
 }
 
 #home-cover{
@@ -480,7 +488,7 @@ div.card:hover::before{
     position: fixed;
     bottom: 20px;
     right: 2px;
-    transition: background-color .3s, 
+    transition: background-color .3s ease-in-out, 
     opacity .5s, visibility .5s;
     opacity: 0;
     visibility: hidden;
@@ -520,6 +528,17 @@ div.card:hover::before{
     line-height: 1.9;
   }
 
+
+  /*media query*/
+  @media (max-width: 768px) {
+    #home-heading h1{
+        font-size: 24px;
+    }
+    #home-heading p {
+        font-size: 25px;
+        margin-top: 15px;
+    }
+  }
 
   @media (min-width: 500px) {
     .content {
